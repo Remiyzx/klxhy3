@@ -251,6 +251,50 @@
             gap: 25px;
             margin: 25px 0;
         }
+
+        /* Stacked Vertical Alignment Cards for Prices & Time */
+        .stacked-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 22px;
+            margin: 25px 0;
+        }
+
+        .stacked-card {
+            background: #f0fdf4;
+            border: 3px solid #a7f3d0;
+            border-radius: 14px;
+            padding: 22px 25px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            box-shadow: 0 4px 10px rgba(4, 120, 87, 0.05);
+        }
+
+        .stacked-val {
+            font-size: 2.1rem;
+            font-weight: bold;
+            color: var(--primary-dark);
+            border-bottom: 2px dashed #a7f3d0;
+            padding-bottom: 6px;
+            width: 100%;
+        }
+
+        .stacked-pinyin {
+            font-size: 1.45rem;
+            font-weight: bold;
+            color: var(--primary-dark);
+        }
+
+        .stacked-rule-note {
+            font-size: 1.1rem;
+            color: #dc2626;
+            font-weight: bold;
+            margin-top: 4px;
+        }
         
         .grid-card { 
             background: var(--primary-soft); 
@@ -644,7 +688,7 @@
 
             <h2>Teens (11-19): "shí" = belas</h2>
             <div class="concept-box">
-                <p>In Chinese, numbers start from the largest digit place: <strong>Read Tens place first, then Ones place</strong> (先念十位数，后念个位数).</p>
+                <p>In Chinese, numbers start from the largest digit place: <strong>Read Tens place first, then Ones place</strong>.</p>
                 <p>Notice that <span class="kw-pinyin">shí</span> corresponds directly to Malay <strong>"belas"</strong>, but Chinese places "shí" in front!</p>
             </div>
 
@@ -994,40 +1038,37 @@
                 <span class="template-slot">___</span> kuài <span class="template-slot">___</span> máo <span class="template-slot">___</span> fēn
             </div>
 
-            <table>
-                <tr>
-                    <th>Price</th>
-                    <th>Pinyin Pronunciation</th>
-                </tr>
-                <tr>
-                    <td><strong style="font-size:1.5em; color:var(--primary-dark);">RM 1.39</strong></td>
-                    <td class="kw-pinyin" style="font-size:1.3em;"><span class="price-num">yí</span> kuài <span class="price-num">sān</span> máo <span class="price-num">jiǔ</span> fēn</td>
-                </tr>
-                <tr>
-                    <td><strong style="font-size:1.5em; color:var(--primary-dark);">RM 12.60</strong></td>
-                    <td class="kw-pinyin" style="font-size:1.3em;"><span class="price-num">shí'èr</span> kuài <span class="price-num">liù</span> máo</td>
-                </tr>
-                <tr>
-                    <td><strong style="font-size:1.5em; color:var(--primary-dark);">RM 76.84</strong></td>
-                    <td class="kw-pinyin" style="font-size:1.3em;"><span class="price-num">qīshíliù</span> kuài <span class="price-num">bā</span> máo <span class="price-num">sì</span> fēn</td>
-                </tr>
-                <tr>
-                    <td><strong style="font-size:1.5em; color:var(--primary-dark);">RM 95.04</strong></td>
-                    <td class="kw-pinyin" style="font-size:1.3em;"><span class="price-num">jiǔshíwǔ</span> kuài <span class="price-num">líng sì</span> fēn</td>
-                </tr>
-                <tr>
-                    <td><strong style="font-size:1.5em; color:var(--primary-dark);">RM 70.05</strong></td>
-                    <td class="kw-pinyin" style="font-size:1.3em;"><span class="price-num">qīshí</span> kuài <span class="price-num">wǔ</span> fēn</td>
-                </tr>
-                <tr>
-                    <td><strong style="font-size:1.5em; color:var(--primary-dark);">RM 0.48</strong></td>
-                    <td class="kw-pinyin" style="font-size:1.3em;"><span class="price-num">sì</span> máo <span class="price-num">bā</span> fēn</td>
-                </tr>
-                <tr>
-                    <td><strong style="font-size:1.5em; color:var(--primary-dark);">RM 0.22</strong></td>
-                    <td class="kw-pinyin" style="font-size:1.3em;"><span class="price-num">liǎng</span> máo <span class="price-num">liǎng</span> fēn</td>
-                </tr>
-            </table>
+            <!-- Vertical Stacked Cards for Prices -->
+            <div class="stacked-grid">
+                <div class="stacked-card">
+                    <div class="stacked-val">RM 1.39</div>
+                    <div class="stacked-pinyin"><span class="price-num">yí</span> kuài <span class="price-num">sān</span> máo <span class="price-num">jiǔ</span> fēn</div>
+                </div>
+                <div class="stacked-card">
+                    <div class="stacked-val">RM 12.60</div>
+                    <div class="stacked-pinyin"><span class="price-num">shí'èr</span> kuài <span class="price-num">liù</span> máo</div>
+                </div>
+                <div class="stacked-card">
+                    <div class="stacked-val">RM 76.84</div>
+                    <div class="stacked-pinyin"><span class="price-num">qīshíliù</span> kuài <span class="price-num">bā</span> máo <span class="price-num">sì</span> fēn</div>
+                </div>
+                <div class="stacked-card">
+                    <div class="stacked-val">RM 95.04</div>
+                    <div class="stacked-pinyin"><span class="price-num">jiǔshíwǔ</span> kuài <span class="price-num">líng sì</span> fēn</div>
+                </div>
+                <div class="stacked-card">
+                    <div class="stacked-val">RM 70.05</div>
+                    <div class="stacked-pinyin"><span class="price-num">qīshí</span> kuài <span class="price-num">wǔ</span> fēn</div>
+                </div>
+                <div class="stacked-card">
+                    <div class="stacked-val">RM 0.48</div>
+                    <div class="stacked-pinyin"><span class="price-num">sì</span> máo <span class="price-num">bā</span> fēn</div>
+                </div>
+                <div class="stacked-card">
+                    <div class="stacked-val">RM 0.22</div>
+                    <div class="stacked-pinyin"><span class="price-num">liǎng</span> máo <span class="price-num">liǎng</span> fēn</div>
+                </div>
+            </div>
         </div>
 
         <!-- Section 8: Time -->
@@ -1049,48 +1090,41 @@
             </div>
 
             <h2>Reading Patterns for Time</h2>
-            <table>
-                <tr>
-                    <th>Time</th>
-                    <th>Pinyin Pronunciation</th>
-                    <th>Special Rules Applied</th>
-                </tr>
-                <tr>
-                    <td><strong style="font-size:1.5em; color:var(--primary-dark);">6:00</strong></td>
-                    <td class="kw-pinyin" style="font-size:1.3em;">liù diǎn</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td><strong style="font-size:1.5em; color:var(--primary-dark);">7:50</strong></td>
-                    <td class="kw-pinyin" style="font-size:1.3em;">qī diǎn wǔshí fēn</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td><strong style="font-size:1.5em; color:var(--primary-dark);">8:<span class="underline-highlight">0</span>9</strong></td>
-                    <td class="kw-pinyin" style="font-size:1.3em;">bā diǎn líng jiǔ fēn</td>
-                    <td><strong style="color:#dc2626;">"líng" rule for minutes &lt; 10</strong></td>
-                </tr>
-                <tr>
-                    <td><strong style="font-size:1.5em; color:var(--primary-dark);">10:35</strong></td>
-                    <td class="kw-pinyin" style="font-size:1.3em;">shí diǎn sānshíwǔ fēn</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td><strong style="font-size:1.5em; color:var(--primary-dark);">12:15</strong></td>
-                    <td class="kw-pinyin" style="font-size:1.3em;">shí'èr diǎn shíwǔ fēn</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td><strong style="font-size:1.5em; color:var(--primary-dark);">10:<span class="underline-highlight">0</span>6</strong></td>
-                    <td class="kw-pinyin" style="font-size:1.3em;">shí diǎn líng liù fēn</td>
-                    <td><strong style="color:#dc2626;">"líng" rule for minutes &lt; 10</strong></td>
-                </tr>
-                <tr>
-                    <td><strong style="font-size:1.5em; color:var(--primary-dark);"><span class="underline-highlight">2</span>:22</strong></td>
-                    <td class="kw-pinyin" style="font-size:1.3em;">liǎng diǎn èrshí'èr fēn</td>
-                    <td><strong style="color:#059669;">"liǎng" for quantity of hours!</strong></td>
-                </tr>
-            </table>
+            
+            <!-- Vertical Stacked Cards for Time -->
+            <div class="stacked-grid">
+                <div class="stacked-card">
+                    <div class="stacked-val">6:00</div>
+                    <div class="stacked-pinyin">liù diǎn</div>
+                </div>
+                <div class="stacked-card">
+                    <div class="stacked-val">7:50</div>
+                    <div class="stacked-pinyin">qī diǎn wǔshí fēn</div>
+                </div>
+                <div class="stacked-card">
+                    <div class="stacked-val">8:<span class="underline-highlight">0</span>9</div>
+                    <div class="stacked-pinyin">bā diǎn líng jiǔ fēn</div>
+                    <div class="stacked-rule-note">"líng" rule for minutes &lt; 10</div>
+                </div>
+                <div class="stacked-card">
+                    <div class="stacked-val">10:35</div>
+                    <div class="stacked-pinyin">shí diǎn sānshíwǔ fēn</div>
+                </div>
+                <div class="stacked-card">
+                    <div class="stacked-val">12:15</div>
+                    <div class="stacked-pinyin">shí'èr diǎn shíwǔ fēn</div>
+                </div>
+                <div class="stacked-card">
+                    <div class="stacked-val">10:<span class="underline-highlight">0</span>6</div>
+                    <div class="stacked-pinyin">shí diǎn líng liù fēn</div>
+                    <div class="stacked-rule-note">"líng" rule for minutes &lt; 10</div>
+                </div>
+                <div class="stacked-card">
+                    <div class="stacked-val"><span class="underline-highlight">2</span>:22</div>
+                    <div class="stacked-pinyin">liǎng diǎn èrshí'èr fēn</div>
+                    <div class="stacked-rule-note" style="color:#059669;">"liǎng" for quantity of hours!</div>
+                </div>
+            </div>
         </div>
 
         <!-- Section 9: Exercises -->
