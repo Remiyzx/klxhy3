@@ -35,9 +35,10 @@
             line-height: 1.6;
         }
 
-        /* Standard Pinyin Font Class */
+        /* Standard Pinyin Font Class with strict glyph rendering */
         .pinyin-font, .kw-pinyin, .pinyin-sample, h1, h2, h3, .answer-box, .template-slot {
-            font-family: 'Andika', 'Century Gothic', sans-serif !important;
+            font-family: 'Andika', 'Segoe UI', sans-serif !important;
+            font-variant-ligatures: none;
         }
 
         /* Simplified Chinese Standard Textbook KaiTi Font Stack */
@@ -993,8 +994,8 @@
             <div class="concept-box">
                 <strong style="font-size:1.35rem; color:var(--primary-dark);"> Difference between xīngqītiān & xīngqīrì:</strong>
                 <ul style="margin:10px 0 0 0; padding-left:25px; line-height:1.8;">
-                    <li><strong>xīngqītiān (<span class="hanzi-text">星期天</span>):</strong> Used in casual, spoken everyday Mandarin conversation.</li>
-                    <li><strong>xīngqīrì (<span class="hanzi-text">星期日</span>):</strong> Used in formal context, written Chinese, calendars, or official documents.</li>
+                    <li><strong>xīngqītiān:</strong> Used in casual, spoken everyday Mandarin conversation.</li>
+                    <li><strong>xīngqīrì:</strong> Used in formal context, written Chinese, calendars, or official documents.</li>
                 </ul>
             </div>
         </div>
@@ -1067,6 +1068,7 @@
                 <div class="stacked-card">
                     <div class="stacked-val">RM 0.22</div>
                     <div class="stacked-pinyin"><span class="price-num">liǎng</span> máo <span class="price-num">liǎng</span> fēn</div>
+                    <div class="stacked-rule-note" style="color:#059669;">Use "liǎng" because máo and fēn are currency measure units!</div>
                 </div>
             </div>
         </div>
