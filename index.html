@@ -22,7 +22,7 @@
             --bg-color: #fafaf9;          
             --text-color: #1c1917;        
             
-            --kw-highlight: #d97706;         
+            --price-num-color: #d97706;  /* Elegant Orange for Price Digits */
         }
         
         body {
@@ -240,7 +240,7 @@
 
         .rule-grid { 
             display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
             gap: 25px; 
             margin: 25px 0; 
         }
@@ -318,7 +318,7 @@
             color: #064e3b;
         }
 
-        /* Template Slot Box for Prices */
+        /* Price Formatting */
         .template-slot-box {
             background: #ffffff;
             border: 3px dashed var(--primary-main);
@@ -333,9 +333,22 @@
         }
 
         .template-slot {
-            color: #d97706;
-            border-bottom: 3px solid #d97706;
+            color: var(--price-num-color);
+            border-bottom: 3px solid var(--price-num-color);
             padding: 0 10px;
+        }
+
+        .price-num {
+            color: var(--price-num-color);
+            font-weight: bold;
+        }
+
+        .base-unit-inline {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            white-space: nowrap;
         }
     </style>
 </head>
@@ -372,12 +385,12 @@
         <div id="numbers-basic" class="section active">
             <div class="hero-banner">
                 <h1>LESSON 3: ABOUT THE NUMBERS</h1>
-                <p>KUAILE XUE HANYU &bull; LESSON 3 <span class="page-badge">KLXHY pg 13-14, 17</span></p>
+                <p>KUAILE XUE HANYU &bull; LESSON 3 <span class="page-badge">KLXHY pg 14-19</span></p>
             </div>
 
             <h1>
                 <span>1. Numbers 0 to 10: Hacks & Culture</span>
-                <span class="page-badge">KLXHY pg 13-14</span>
+                <span class="page-badge">KLXHY pg 14</span>
             </h1>
 
             <div class="concept-box" style="border-left-color: #10b981;">
@@ -390,86 +403,86 @@
             <table>
                 <tr>
                     <th style="width: 12%;">Number</th>
-                    <th style="width: 14%;">Hanzi</th>
                     <th style="width: 16%;">Pinyin</th>
+                    <th style="width: 14%;">Hanzi</th>
                     <th style="width: 30%;">Memory / Visual Hack</th>
                     <th style="width: 28%;">Culture & Associations</th>
                 </tr>
                 <tr>
                     <td>0</td>
-                    <td class="hanzi-text" style="font-size:1.8rem;">零</td>
                     <td><strong class="kw-pinyin">líng</strong></td>
+                    <td class="hanzi-text" style="font-size:1.8rem;">零</td>
                     <td>-</td>
                     <td>-</td>
                 </tr>
                 <tr>
                     <td>1</td>
-                    <td class="hanzi-text" style="font-size:1.8rem;">一</td>
                     <td><strong class="kw-pinyin">yī</strong></td>
+                    <td class="hanzi-text" style="font-size:1.8rem;">一</td>
                     <td>1 horizontal stroke (héng)</td>
                     <td>-</td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td class="hanzi-text" style="font-size:1.8rem;">二</td>
                     <td><strong class="kw-pinyin">èr</strong></td>
+                    <td class="hanzi-text" style="font-size:1.8rem;">二</td>
                     <td>2 horizontal strokes (héng)</td>
                     <td>-</td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td class="hanzi-text" style="font-size:1.8rem;">三</td>
                     <td><strong class="kw-pinyin">sān</strong></td>
+                    <td class="hanzi-text" style="font-size:1.8rem;">三</td>
                     <td>3 horizontal strokes (héng)</td>
                     <td>-</td>
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td class="hanzi-text" style="font-size:1.8rem;">四</td>
                     <td><strong class="kw-pinyin">sì</strong></td>
+                    <td class="hanzi-text" style="font-size:1.8rem;">四</td>
                     <td><strong>segi empat</strong> (looks like a square / 4-sided frame)</td>
                     <td><strong style="color:#dc2626;">UNLUCKY</strong>: Sounds like "death" (<span class="hanzi-text">死</span> <span class="kw-pinyin">sǐ</span>). Skipped on elevators & car plates in China/MY Chinese areas.</td>
                 </tr>
                 <tr>
                     <td>5</td>
-                    <td class="hanzi-text" style="font-size:1.8rem;">五</td>
                     <td><strong class="kw-pinyin">wǔ</strong></td>
+                    <td class="hanzi-text" style="font-size:1.8rem;">五</td>
                     <td><strong>3 héng + 2 shù = 5</strong> (can see the "5" shape)</td>
                     <td>-</td>
                 </tr>
                 <tr>
                     <td>6</td>
-                    <td class="hanzi-text" style="font-size:1.8rem;">六</td>
                     <td><strong class="kw-pinyin">liù</strong></td>
+                    <td class="hanzi-text" style="font-size:1.8rem;">六</td>
                     <td>-</td>
                     <td><strong style="color:#059669;">LUCKY</strong>: Sounds like "smooth" (<span class="hanzi-text">溜</span> <span class="kw-pinyin">liù</span>). Represents good fortune. "666" is popular on car plates & phones!</td>
                 </tr>
                 <tr>
                     <td>7</td>
-                    <td class="hanzi-text" style="font-size:1.8rem;">七</td>
                     <td><strong class="kw-pinyin">qī</strong></td>
-                    <td><strong>"q" of qī</strong> looks like a <strong>"7" turned upside down</strong> (7-4)</td>
+                    <td class="hanzi-text" style="font-size:1.8rem;">七</td>
+                    <td>"q" of qī looks like a "7" turned upside down</td>
                     <td>-</td>
                 </tr>
                 <tr>
                     <td>8</td>
-                    <td class="hanzi-text" style="font-size:1.8rem;">八</td>
                     <td><strong class="kw-pinyin">bā</strong></td>
+                    <td class="hanzi-text" style="font-size:1.8rem;">八</td>
                     <td>-</td>
-                    <td><strong style="color:#d97706;">WEALTH & PROSPERITY</strong>: Sounds like "prosper" (<span class="hanzi-text">发</span> <span class="kw-pinyin">fā</span>). Common in <strong>"Gōngxǐ fācái"</strong> during CNY!</td>
+                    <td><strong style="color:#d97706;">WEALTH & PROSPERITY</strong>: Sounds like "prosper" (<span class="hanzi-text">发</span> <span class="kw-pinyin">fā</span>). Common in <strong>"Gōngxǐ fācái"</strong> (<span class="hanzi-text">恭喜发财</span>) during CNY, which literally means <em>"Wishing you prosperity and wealth!"</em></td>
                 </tr>
                 <tr>
                     <td>9</td>
-                    <td class="hanzi-text" style="font-size:1.8rem;">九</td>
                     <td><strong class="kw-pinyin">jiǔ</strong></td>
-                    <td>Looks like the <strong>"j" of jiǔ</strong></td>
+                    <td class="hanzi-text" style="font-size:1.8rem;">九</td>
+                    <td>Looks like the "j" of jiǔ</td>
                     <td>-</td>
                 </tr>
                 <tr>
                     <td>10</td>
-                    <td class="hanzi-text" style="font-size:1.8rem;">十</td>
                     <td><strong class="kw-pinyin">shí</strong></td>
-                    <td>Looks like the <strong>"t" of ten</strong></td>
+                    <td class="hanzi-text" style="font-size:1.8rem;">十</td>
+                    <td>Looks like the "t" of ten</td>
                     <td>-</td>
                 </tr>
             </table>
@@ -559,9 +572,14 @@
                 <span class="page-badge">KLXHY pg 14</span>
             </h1>
 
-            <p style="font-size:1.35rem;">In Chinese, large numbers are built by combining base digit units (1-9) with positional units:</p>
+            <p style="font-size:1.35rem;">
+                In Chinese, large numbers are built by combining base digit units (1-9) with positional units:
+                <strong class="base-unit-inline hanzi-text" style="color: var(--primary-dark); font-size: 1.5rem; margin-left: 10px;">
+                    十 (<span class="kw-pinyin" style="font-size: 1.1rem;">shí</span>)、百 (<span class="kw-pinyin" style="font-size: 1.1rem;">bǎi</span>)、千 (<span class="kw-pinyin" style="font-size: 1.1rem;">qiān</span>)、万 (<span class="kw-pinyin" style="font-size: 1.1rem;">wàn</span>)
+                </strong>
+            </p>
 
-            <div class="rule-grid">
+            <div class="rule-grid" style="grid-template-columns: repeat(4, 1fr);">
                 <div class="grid-card center">
                     <div class="hanzi-text" style="font-size: 2.5rem; color: var(--primary-dark);">十</div>
                     <div style="font-size:1.8rem; font-weight:bold;">10</div>
@@ -571,19 +589,16 @@
                     <div class="hanzi-text" style="font-size: 2.5rem; color: var(--primary-dark);">百</div>
                     <div style="font-size:1.8rem; font-weight:bold;">1<span class="underline-highlight">00</span></div>
                     <div class="kw-pinyin" style="font-size:1.4rem;">bǎi</div>
-                    <div style="font-size:1.05rem; color:#555;">(2 zeros underlined)</div>
                 </div>
                 <div class="grid-card center">
                     <div class="hanzi-text" style="font-size: 2.5rem; color: var(--primary-dark);">千</div>
                     <div style="font-size:1.8rem; font-weight:bold;">1,<span class="underline-highlight">000</span></div>
                     <div class="kw-pinyin" style="font-size:1.4rem;">qiān</div>
-                    <div style="font-size:1.05rem; color:#555;">(3 zeros underlined)</div>
                 </div>
                 <div class="grid-card center">
                     <div class="hanzi-text" style="font-size: 2.5rem; color: var(--primary-dark);">万</div>
                     <div style="font-size:1.8rem; font-weight:bold;">1<span class="underline-highlight">0,000</span></div>
                     <div class="kw-pinyin" style="font-size:1.4rem;">wàn</div>
-                    <div style="font-size:1.05rem; color:#555;">(4 zeros underlined)</div>
                 </div>
             </div>
 
@@ -663,6 +678,30 @@
                     <td><strong class="kw-pinyin">shísì</strong></td>
                     <td>empat belas</td>
                     <td>10 + 4 (shí + sì)</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td><strong class="kw-pinyin">shíwǔ</strong></td>
+                    <td>lima belas</td>
+                    <td>10 + 5 (shí + wǔ)</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td><strong class="kw-pinyin">shíliù</strong></td>
+                    <td>enam belas</td>
+                    <td>10 + 6 (shí + liù)</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td><strong class="kw-pinyin">shíqī</strong></td>
+                    <td>tujuh belas</td>
+                    <td>10 + 7 (shí + qī)</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td><strong class="kw-pinyin">shíbā</strong></td>
+                    <td>lapan belas</td>
+                    <td>10 + 8 (shí + bā)</td>
                 </tr>
                 <tr>
                     <td>19</td>
@@ -948,45 +987,45 @@
                 </div>
             </div>
 
-            <h2>Price Template Reading Slot Format</h2>
+            <h2>Pinyin Price Format</h2>
             <p>Insert numbers into this slot format to pronounce any price:</p>
 
             <div class="template-slot-box">
-                [ <span class="template-slot">___</span> kuài <span class="template-slot">___</span> máo <span class="template-slot">___</span> fēn ]
+                <span class="template-slot">___</span> kuài <span class="template-slot">___</span> máo <span class="template-slot">___</span> fēn
             </div>
 
             <table>
                 <tr>
                     <th>Price</th>
-                    <th>Filled Template Slot Format</th>
+                    <th>Pinyin Pronunciation</th>
                 </tr>
                 <tr>
                     <td><strong style="font-size:1.5em; color:var(--primary-dark);">RM 1.39</strong></td>
-                    <td class="kw-pinyin" style="font-size:1.3em;">[ yí kuài sān máo jiǔ fēn ]</td>
+                    <td class="kw-pinyin" style="font-size:1.3em;"><span class="price-num">yí</span> kuài <span class="price-num">sān</span> máo <span class="price-num">jiǔ</span> fēn</td>
                 </tr>
                 <tr>
                     <td><strong style="font-size:1.5em; color:var(--primary-dark);">RM 12.60</strong></td>
-                    <td class="kw-pinyin" style="font-size:1.3em;">[ shí'èr kuài liù máo ]</td>
+                    <td class="kw-pinyin" style="font-size:1.3em;"><span class="price-num">shí'èr</span> kuài <span class="price-num">liù</span> máo</td>
                 </tr>
                 <tr>
                     <td><strong style="font-size:1.5em; color:var(--primary-dark);">RM 76.84</strong></td>
-                    <td class="kw-pinyin" style="font-size:1.3em;">[ qīshíliù kuài bā máo sì fēn ]</td>
+                    <td class="kw-pinyin" style="font-size:1.3em;"><span class="price-num">qīshíliù</span> kuài <span class="price-num">bā</span> máo <span class="price-num">sì</span> fēn</td>
                 </tr>
                 <tr>
                     <td><strong style="font-size:1.5em; color:var(--primary-dark);">RM 95.04</strong></td>
-                    <td class="kw-pinyin" style="font-size:1.3em;">[ jiǔshíwǔ kuài líng sì fēn ]</td>
+                    <td class="kw-pinyin" style="font-size:1.3em;"><span class="price-num">jiǔshíwǔ</span> kuài <span class="price-num">líng sì</span> fēn</td>
                 </tr>
                 <tr>
                     <td><strong style="font-size:1.5em; color:var(--primary-dark);">RM 70.05</strong></td>
-                    <td class="kw-pinyin" style="font-size:1.3em;">[ qīshí kuài wǔ fēn ]</td>
+                    <td class="kw-pinyin" style="font-size:1.3em;"><span class="price-num">qīshí</span> kuài <span class="price-num">wǔ</span> fēn</td>
                 </tr>
                 <tr>
                     <td><strong style="font-size:1.5em; color:var(--primary-dark);">RM 0.48</strong></td>
-                    <td class="kw-pinyin" style="font-size:1.3em;">[ sì máo bā fēn ]</td>
+                    <td class="kw-pinyin" style="font-size:1.3em;"><span class="price-num">sì</span> máo <span class="price-num">bā</span> fēn</td>
                 </tr>
                 <tr>
                     <td><strong style="font-size:1.5em; color:var(--primary-dark);">RM 0.22</strong></td>
-                    <td class="kw-pinyin" style="font-size:1.3em;">[ liǎng máo liǎng fēn ]</td>
+                    <td class="kw-pinyin" style="font-size:1.3em;"><span class="price-num">liǎng</span> máo <span class="price-num">liǎng</span> fēn</td>
                 </tr>
             </table>
         </div>
@@ -1217,7 +1256,7 @@
             <!-- Exercise F -->
             <div class="exercise-card">
                 <h3>
-                    <span>Ex F: Number Related Words (2 Columns)</span>
+                    <span>Ex F: Number Related Words</span>
                     <span class="page-badge">KLXHY pg 19</span>
                 </h3>
 
