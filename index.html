@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lesson 3 - About The Numbers Teaching Notes</title>
-    <!-- Import Nunito for Perfect Standard Pinyin (Dotless i) & LXGW WenKai for Standard KaiTi Hanzi -->
+    <!-- Import LXGW WenKai for Standard KaiTi Hanzi -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,700&family=LXGW+WenKai+TC:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&display=swap');
 
         :root {
             /* Layered Elegant Green Palette */
@@ -26,7 +26,7 @@
         }
         
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, 'Segoe UI', Helvetica, sans-serif;
             margin: 0;
             padding: 0;
             background-color: var(--bg-color);
@@ -35,14 +35,14 @@
             line-height: 1.6;
         }
 
-        /* Standard Pinyin Font Class using Nunito (Strictly Dotless ī) */
-        .pinyin-font, .kw-pinyin, .pinyin-sample, h1, h2, h3, .answer-box, .template-slot {
-            font-family: 'Nunito', 'Segoe UI', Arial, sans-serif !important;
+        /* Strictly Force Clean Sans-Serif Font for Standard Pinyin (Dotless ī) */
+        .pinyin-font, .kw-pinyin, .pinyin-sample, .template-slot, .price-num, .stacked-pinyin, .answer-box {
+            font-family: Arial, 'Helvetica Neue', 'Segoe UI', sans-serif !important;
             font-variant-ligatures: none;
         }
 
-        /* Simplified Chinese Standard Textbook KaiTi Font Stack */
-        .hanzi-text, .hanzi-text *, [class*="hanzi"] {
+        /* Simplified Chinese Standard Textbook KaiTi Font Stack (Applied ONLY to Hanzi elements) */
+        .hanzi-text {
             font-family: 'LXGW WenKai TC', 'KaiTi', '楷体', 'STKaiti', '华文楷体', serif !important;
         }
 
@@ -565,45 +565,45 @@
                 </h3>
                 <p>Rewrite each character three times in the space provided:</p>
 
-                <div class="rule-grid hanzi-text">
+                <div class="rule-grid">
                     <div class="interactive-q-item center">
-                        <div style="font-size: 2.2rem; font-weight: bold; color: var(--primary-dark);">一</div>
+                        <div class="hanzi-text" style="font-size: 2.2rem; font-weight: bold; color: var(--primary-dark);">一</div>
                         <div class="kw-pinyin">yī</div>
                     </div>
                     <div class="interactive-q-item center">
-                        <div style="font-size: 2.2rem; font-weight: bold; color: var(--primary-dark);">二</div>
+                        <div class="hanzi-text" style="font-size: 2.2rem; font-weight: bold; color: var(--primary-dark);">二</div>
                         <div class="kw-pinyin">èr</div>
                     </div>
                     <div class="interactive-q-item center">
-                        <div style="font-size: 2.2rem; font-weight: bold; color: var(--primary-dark);">三</div>
+                        <div class="hanzi-text" style="font-size: 2.2rem; font-weight: bold; color: var(--primary-dark);">三</div>
                         <div class="kw-pinyin">sān</div>
                     </div>
                     <div class="interactive-q-item center">
-                        <div style="font-size: 2.2rem; font-weight: bold; color: var(--primary-dark);">四</div>
+                        <div class="hanzi-text" style="font-size: 2.2rem; font-weight: bold; color: var(--primary-dark);">四</div>
                         <div class="kw-pinyin">sì</div>
                     </div>
                     <div class="interactive-q-item center">
-                        <div style="font-size: 2.2rem; font-weight: bold; color: var(--primary-dark);">五</div>
+                        <div class="hanzi-text" style="font-size: 2.2rem; font-weight: bold; color: var(--primary-dark);">五</div>
                         <div class="kw-pinyin">wǔ</div>
                     </div>
                     <div class="interactive-q-item center">
-                        <div style="font-size: 2.2rem; font-weight: bold; color: var(--primary-dark);">六</div>
+                        <div class="hanzi-text" style="font-size: 2.2rem; font-weight: bold; color: var(--primary-dark);">六</div>
                         <div class="kw-pinyin">liù</div>
                     </div>
                     <div class="interactive-q-item center">
-                        <div style="font-size: 2.2rem; font-weight: bold; color: var(--primary-dark);">七</div>
+                        <div class="hanzi-text" style="font-size: 2.2rem; font-weight: bold; color: var(--primary-dark);">七</div>
                         <div class="kw-pinyin">qī</div>
                     </div>
                     <div class="interactive-q-item center">
-                        <div style="font-size: 2.2rem; font-weight: bold; color: var(--primary-dark);">八</div>
+                        <div class="hanzi-text" style="font-size: 2.2rem; font-weight: bold; color: var(--primary-dark);">八</div>
                         <div class="kw-pinyin">bā</div>
                     </div>
                     <div class="interactive-q-item center">
-                        <div style="font-size: 2.2rem; font-weight: bold; color: var(--primary-dark);">九</div>
+                        <div class="hanzi-text" style="font-size: 2.2rem; font-weight: bold; color: var(--primary-dark);">九</div>
                         <div class="kw-pinyin">jiǔ</div>
                     </div>
                     <div class="interactive-q-item center">
-                        <div style="font-size: 2.2rem; font-weight: bold; color: var(--primary-dark);">十</div>
+                        <div class="hanzi-text" style="font-size: 2.2rem; font-weight: bold; color: var(--primary-dark);">十</div>
                         <div class="kw-pinyin">shí</div>
                     </div>
                 </div>
@@ -619,8 +619,8 @@
 
             <p style="font-size:1.35rem;">
                 In Chinese, large numbers are built by combining base digit units (1-9) with positional units:
-                <strong class="base-unit-inline hanzi-text" style="color: var(--primary-dark); font-size: 1.5rem; margin-left: 10px;">
-                    十 (<span class="kw-pinyin" style="font-size: 1.1rem;">shí</span>)、百 (<span class="kw-pinyin" style="font-size: 1.1rem;">bǎi</span>)、千 (<span class="kw-pinyin" style="font-size: 1.1rem;">qiān</span>)、万 (<span class="kw-pinyin" style="font-size: 1.1rem;">wàn</span>)
+                <strong class="base-unit-inline" style="color: var(--primary-dark); font-size: 1.5rem; margin-left: 10px;">
+                    <span class="hanzi-text">十</span> (<span class="kw-pinyin" style="font-size: 1.1rem;">shí</span>)、<span class="hanzi-text">百</span> (<span class="kw-pinyin" style="font-size: 1.1rem;">bǎi</span>)、<span class="hanzi-text">千</span> (<span class="kw-pinyin" style="font-size: 1.1rem;">qiān</span>)、<span class="hanzi-text">万</span> (<span class="kw-pinyin" style="font-size: 1.1rem;">wàn</span>)
                 </strong>
             </p>
 
@@ -1193,44 +1193,44 @@
                 </h3>
 
                 <div class="rule-grid">
-                    <div class="interactive-q-item hanzi-text" style="grid-column: span 2;">
-                        <div class="q-header"><span class="q-prompt">1) 一 (1), 二 (2), ________</span> <button class="reveal-btn" onclick="toggleAnswer('ex-d-1')">Answer</button></div>
-                        <div id="ex-d-1" class="answer-box">三 (sān / 3)</div>
-                    </div>
-                    <div class="interactive-q-item hanzi-text" style="grid-column: span 2;">
-                        <div class="q-header"><span class="q-prompt">2) 四 (4), ________, 六 (6)</span> <button class="reveal-btn" onclick="toggleAnswer('ex-d-2')">Answer</button></div>
-                        <div id="ex-d-2" class="answer-box">五 (wǔ / 5)</div>
-                    </div>
-                    <div class="interactive-q-item hanzi-text" style="grid-column: span 2;">
-                        <div class="q-header"><span class="q-prompt">3) 七 (7), 八 (8), ________</span> <button class="reveal-btn" onclick="toggleAnswer('ex-d-3')">Answer</button></div>
-                        <div id="ex-d-3" class="answer-box">九 (jiǔ / 9)</div>
-                    </div>
-                    <div class="interactive-q-item hanzi-text" style="grid-column: span 2;">
-                        <div class="q-header"><span class="q-prompt">4) 二十 (20), ________, 二十二 (22)</span> <button class="reveal-btn" onclick="toggleAnswer('ex-d-4')">Answer</button></div>
-                        <div id="ex-d-4" class="answer-box">二十一 (èrshíyī / 21)</div>
-                    </div>
-                    <div class="interactive-q-item hanzi-text" style="grid-column: span 2;">
-                        <div class="q-header"><span class="q-prompt">5) ________, 五十七 (57), 五十八 (58)</span> <button class="reveal-btn" onclick="toggleAnswer('ex-d-5')">Answer</button></div>
-                        <div id="ex-d-5" class="answer-box">五十六 (wǔshíliù / 56)</div>
+                    <div class="interactive-q-item" style="grid-column: span 2;">
+                        <div class="q-header"><span class="q-prompt"><span class="hanzi-text">一</span> (1), <span class="hanzi-text">二</span> (2), ________</span> <button class="reveal-btn" onclick="toggleAnswer('ex-d-1')">Answer</button></div>
+                        <div id="ex-d-1" class="answer-box"><span class="hanzi-text">三</span> (sān / 3)</div>
                     </div>
                     <div class="interactive-q-item" style="grid-column: span 2;">
-                        <div class="q-header"><span class="q-prompt">6) shí (10), shíyī (11), ________, shísān (13)</span> <button class="reveal-btn" onclick="toggleAnswer('ex-d-6')">Answer</button></div>
+                        <div class="q-header"><span class="q-prompt"><span class="hanzi-text">四</span> (4), ________, <span class="hanzi-text">六</span> (6)</span> <button class="reveal-btn" onclick="toggleAnswer('ex-d-2')">Answer</button></div>
+                        <div id="ex-d-2" class="answer-box"><span class="hanzi-text">五</span> (wǔ / 5)</div>
+                    </div>
+                    <div class="interactive-q-item" style="grid-column: span 2;">
+                        <div class="q-header"><span class="q-prompt"><span class="hanzi-text">七</span> (7), <span class="hanzi-text">八</span> (8), ________</span> <button class="reveal-btn" onclick="toggleAnswer('ex-d-3')">Answer</button></div>
+                        <div id="ex-d-3" class="answer-box"><span class="hanzi-text">九</span> (jiǔ / 9)</div>
+                    </div>
+                    <div class="interactive-q-item" style="grid-column: span 2;">
+                        <div class="q-header"><span class="q-prompt"><span class="hanzi-text">二十</span> (20), ________, <span class="hanzi-text">二十二</span> (22)</span> <button class="reveal-btn" onclick="toggleAnswer('ex-d-4')">Answer</button></div>
+                        <div id="ex-d-4" class="answer-box"><span class="hanzi-text">二十一</span> (èrshíyī / 21)</div>
+                    </div>
+                    <div class="interactive-q-item" style="grid-column: span 2;">
+                        <div class="q-header"><span class="q-prompt">________, <span class="hanzi-text">五十七</span> (57), <span class="hanzi-text">五十八</span> (58)</span> <button class="reveal-btn" onclick="toggleAnswer('ex-d-5')">Answer</button></div>
+                        <div id="ex-d-5" class="answer-box"><span class="hanzi-text">五十六</span> (wǔshíliù / 56)</div>
+                    </div>
+                    <div class="interactive-q-item" style="grid-column: span 2;">
+                        <div class="q-header"><span class="q-prompt">shí (10), shíyī (11), ________, shísān (13)</span> <button class="reveal-btn" onclick="toggleAnswer('ex-d-6')">Answer</button></div>
                         <div id="ex-d-6" class="answer-box">shí'èr (12)</div>
                     </div>
                     <div class="interactive-q-item" style="grid-column: span 2;">
-                        <div class="q-header"><span class="q-prompt">7) qīshí (70), bāshí (80), jiǔshí (90), ________</span> <button class="reveal-btn" onclick="toggleAnswer('ex-d-7')">Answer</button></div>
+                        <div class="q-header"><span class="q-prompt">qīshí (70), bāshí (80), jiǔshí (90), ________</span> <button class="reveal-btn" onclick="toggleAnswer('ex-d-7')">Answer</button></div>
                         <div id="ex-d-7" class="answer-box">yìbǎi (100)</div>
                     </div>
                     <div class="interactive-q-item" style="grid-column: span 2;">
-                        <div class="q-header"><span class="q-prompt">8) sìshí'èr (42), ________, sìshíliù (46), ________, wǔshí (50)</span> <button class="reveal-btn" onclick="toggleAnswer('ex-d-8')">Answer</button></div>
+                        <div class="q-header"><span class="q-prompt">sìshí'èr (42), ________, sìshíliù (46), ________, wǔshí (50)</span> <button class="reveal-btn" onclick="toggleAnswer('ex-d-8')">Answer</button></div>
                         <div id="ex-d-8" class="answer-box">sìshísì (44), sìshíbā (48)</div>
                     </div>
                     <div class="interactive-q-item" style="grid-column: span 2;">
-                        <div class="q-header"><span class="q-prompt">9) yìbǎi líng sì (104), yìbǎi líng wǔ (105), ________</span> <button class="reveal-btn" onclick="toggleAnswer('ex-d-9')">Answer</button></div>
+                        <div class="q-header"><span class="q-prompt">yìbǎi líng sì (104), yìbǎi líng wǔ (105), ________</span> <button class="reveal-btn" onclick="toggleAnswer('ex-d-9')">Answer</button></div>
                         <div id="ex-d-9" class="answer-box">yìbǎi líng liù (106)</div>
                     </div>
                     <div class="interactive-q-item" style="grid-column: span 2;">
-                        <div class="q-header"><span class="q-prompt">10) yìbǎi yīshí (110), ________, yìbǎi yīshísān (113)</span> <button class="reveal-btn" onclick="toggleAnswer('ex-d-10')">Answer</button></div>
+                        <div class="q-header"><span class="q-prompt">yìbǎi yīshí (110), ________, yìbǎi yīshísān (113)</span> <button class="reveal-btn" onclick="toggleAnswer('ex-d-10')">Answer</button></div>
                         <div id="ex-d-10" class="answer-box">yìbǎi yīshíyī (111), yìbǎi yīshí'èr (112)</div>
                     </div>
                 </div>
@@ -1266,25 +1266,25 @@
                     </div>
 
                     <!-- Full Hanzi Questions 6-10 -->
-                    <div class="interactive-q-item hanzi-text">
-                        <div class="q-header"><span class="q-prompt">6) 六 (6) + 四 (4) = ?</span> <button class="reveal-btn" onclick="toggleAnswer('ex-e-6')">Answer</button></div>
-                        <div id="ex-e-6" class="answer-box">十 (shí / 10)</div>
+                    <div class="interactive-q-item">
+                        <div class="q-header"><span class="q-prompt"><span class="hanzi-text">6) 六</span> (6) + <span class="hanzi-text">四</span> (4) = ?</span> <button class="reveal-btn" onclick="toggleAnswer('ex-e-6')">Answer</button></div>
+                        <div id="ex-e-6" class="answer-box"><span class="hanzi-text">十</span> (shí / 10)</div>
                     </div>
-                    <div class="interactive-q-item hanzi-text">
-                        <div class="q-header"><span class="q-prompt">7) 九 (9) - 三 (3) = ?</span> <button class="reveal-btn" onclick="toggleAnswer('ex-e-7')">Answer</button></div>
-                        <div id="ex-e-7" class="answer-box">六 (liù / 6)</div>
+                    <div class="interactive-q-item">
+                        <div class="q-header"><span class="q-prompt"><span class="hanzi-text">7) 九</span> (9) - <span class="hanzi-text">三</span> (3) = ?</span> <button class="reveal-btn" onclick="toggleAnswer('ex-e-7')">Answer</button></div>
+                        <div id="ex-e-7" class="answer-box"><span class="hanzi-text">六</span> (liù / 6)</div>
                     </div>
-                    <div class="interactive-q-item hanzi-text">
-                        <div class="q-header"><span class="q-prompt">8) 八 (8) + 一 (1) = ?</span> <button class="reveal-btn" onclick="toggleAnswer('ex-e-8')">Answer</button></div>
-                        <div id="ex-e-8" class="answer-box">九 (jiǔ / 9)</div>
+                    <div class="interactive-q-item">
+                        <div class="q-header"><span class="q-prompt"><span class="hanzi-text">8) 八</span> (8) + <span class="hanzi-text">一</span> (1) = ?</span> <button class="reveal-btn" onclick="toggleAnswer('ex-e-8')">Answer</button></div>
+                        <div id="ex-e-8" class="answer-box"><span class="hanzi-text">九</span> (jiǔ / 9)</div>
                     </div>
-                    <div class="interactive-q-item hanzi-text">
-                        <div class="q-header"><span class="q-prompt">9) 十 (10) ➗ 五 (5) = ?</span> <button class="reveal-btn" onclick="toggleAnswer('ex-e-9')">Answer</button></div>
-                        <div id="ex-e-9" class="answer-box">二 (èr / 2)</div>
+                    <div class="interactive-q-item">
+                        <div class="q-header"><span class="q-prompt"><span class="hanzi-text">9) 十</span> (10) ➗ <span class="hanzi-text">五</span> (5) = ?</span> <button class="reveal-btn" onclick="toggleAnswer('ex-e-9')">Answer</button></div>
+                        <div id="ex-e-9" class="answer-box"><span class="hanzi-text">二</span> (èr / 2)</div>
                     </div>
-                    <div class="interactive-q-item hanzi-text">
-                        <div class="q-header"><span class="q-prompt">10) 七 (7) × 二 (2) = ?</span> <button class="reveal-btn" onclick="toggleAnswer('ex-e-10')">Answer</button></div>
-                        <div id="ex-e-10" class="answer-box">十四 (shísì / 14)</div>
+                    <div class="interactive-q-item">
+                        <div class="q-header"><span class="q-prompt"><span class="hanzi-text">10) 七</span> (7) × <span class="hanzi-text">二</span> (2) = ?</span> <button class="reveal-btn" onclick="toggleAnswer('ex-e-10')">Answer</button></div>
+                        <div id="ex-e-10" class="answer-box"><span class="hanzi-text">十四</span> (shísì / 14)</div>
                     </div>
                 </div>
             </div>
