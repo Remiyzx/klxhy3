@@ -363,6 +363,11 @@
             color: #064e3b;
         }
 
+        .highlight-red-pinyin {
+            color: #dc2626;
+            font-weight: bold;
+        }
+
         /* Price Formatting */
         .template-slot-box {
             background: #ffffff;
@@ -410,6 +415,12 @@
         }
         .stroke-link:hover {
             background-color: var(--primary-dark);
+        }
+
+        .strike-pinyin {
+            text-decoration: line-through;
+            color: #94a3b8;
+            margin-right: 8px;
         }
     </style>
 </head>
@@ -589,7 +600,7 @@
         <!-- Section 2: Base Units (10, 100, 1000, 10000) -->
         <div id="base-units" class="section">
             <h1>
-                <span>2. Base Units: 10, 100, 1,000 & 10,000</span>
+                <span>2. Base Units: 10, 100, 1000 & 10000</span>
                 <span class="page-badge">KLXHY pg 14</span>
             </h1>
 
@@ -613,22 +624,22 @@
                 </div>
                 <div class="grid-card center">
                     <div class="hanzi-text" style="font-size: 2.5rem; color: var(--primary-dark);">千</div>
-                    <div style="font-size:1.8rem; font-weight:bold;">1,<span class="underline-highlight">000</span></div>
+                    <div style="font-size:1.8rem; font-weight:bold;">1<span class="underline-highlight">000</span></div>
                     <div class="kw-pinyin" style="font-size:1.4rem;">qiān</div>
                 </div>
                 <div class="grid-card center">
                     <div class="hanzi-text" style="font-size: 2.5rem; color: var(--primary-dark);">万</div>
-                    <div style="font-size:1.8rem; font-weight:bold;">1<span class="underline-highlight">0,000</span></div>
+                    <div style="font-size:1.8rem; font-weight:bold;">1<span class="underline-highlight">0000</span></div>
                     <div class="kw-pinyin" style="font-size:1.4rem;">wàn</div>
                 </div>
             </div>
 
             <div class="info-box">
-                <strong style="color:#b45309;"> Note on 10,000 (wàn / 万):</strong><br>
-                In standard Mandarin, <strong>wàn (万)</strong> serves as a primary base unit for 10,000 (e.g. 10,000 = <em>yī wàn</em>). While English and Malay count in thousands ("ten thousand" / "sepuluh ribu"), Chinese grouping shifts every 4 zeros (万). Non-native speakers sometimes casually say <em>shí qiān</em> under English/Malay or dialect influence, but in standard Mandarin <strong>wàn</strong> must be used!
+                <strong style="color:#b45309;"> Note on 10000 (wàn / 万):</strong><br>
+                In standard Mandarin, <strong>wàn (万)</strong> serves as a primary base unit for 10000 (e.g. 10000 = <em>yī wàn</em>). While English and Malay count in thousands ("ten thousand" / "sepuluh ribu"), Chinese grouping shifts every 4 zeros (万). Non-native speakers sometimes casually say <em>shí qiān</em> under English/Malay or dialect influence, but in standard Mandarin <strong>wàn</strong> must be used!
             </div>
 
-            <h2>Reading Large Numbers Pattern (e.g. 76,849)</h2>
+            <h2>Reading Large Numbers Pattern (e.g. 76849)</h2>
             <div class="concept-box">
                 <p>When reading long numbers in Chinese, identify place units <strong>from right to left</strong> first:</p>
                 
@@ -803,49 +814,50 @@
             <div class="rule-card" style="border-top-color: #047857;">
                 <h3 style="color:var(--primary-dark);">Rule 1: The "líng" Rule (x0x)</h3>
                 <p style="font-size:1.35rem;">
-                    In hundreds where the tens digit is <strong>0</strong>, the word <span class="kw-pinyin">líng</span> (zero) <strong style="color:#dc2626;">MUST be pronounced</strong>!
+                    In hundreds where the digit <strong>0</strong> is in the middle, the word <span class="kw-pinyin"><span class="highlight-red-pinyin">líng</span></span> (zero) <strong style="color:#dc2626;">MUST be pronounced</strong>! Note: Only middle zeros require <strong>líng</strong>.
                 </p>
                 <div class="rule-grid" style="grid-template-columns: repeat(3, 1fr);">
                     <!-- Row 1: 101-109 Examples -->
                     <div class="grid-card center">
                         <strong style="font-size:1.8rem;">1<span class="underline-highlight">0</span>1</strong>
-                        <span class="kw-pinyin">yìbǎi líng yī</span>
+                        <span class="kw-pinyin">yìbǎi <span class="highlight-red-pinyin">líng</span> yī</span>
                     </div>
                     <div class="grid-card center">
                         <strong style="font-size:1.8rem;">1<span class="underline-highlight">0</span>2</strong>
-                        <span class="kw-pinyin">yìbǎi líng èr</span>
+                        <span class="kw-pinyin">yìbǎi <span class="highlight-red-pinyin">líng</span> èr</span>
                     </div>
                     <div class="grid-card center">
                         <strong style="font-size:1.8rem;">1<span class="underline-highlight">0</span>9</strong>
-                        <span class="kw-pinyin">yìbǎi líng jiǔ</span>
+                        <span class="kw-pinyin">yìbǎi <span class="highlight-red-pinyin">líng</span> jiǔ</span>
                     </div>
 
                     <!-- Row 2: Other 100s Examples -->
                     <div class="grid-card center">
                         <strong style="font-size:1.8rem;">3<span class="underline-highlight">0</span>4</strong>
-                        <span class="kw-pinyin">sānbǎi líng sì</span>
+                        <span class="kw-pinyin">sānbǎi <span class="highlight-red-pinyin">líng</span> sì</span>
                     </div>
                     <div class="grid-card center">
                         <strong style="font-size:1.8rem;">5<span class="underline-highlight">0</span>6</strong>
-                        <span class="kw-pinyin">wǔbǎi líng liù</span>
+                        <span class="kw-pinyin">wǔbǎi <span class="highlight-red-pinyin">líng</span> liù</span>
                     </div>
                     <div class="grid-card center">
                         <strong style="font-size:1.8rem;">7<span class="underline-highlight">0</span>8</strong>
-                        <span class="kw-pinyin">qībǎi líng bā</span>
+                        <span class="kw-pinyin">qībǎi <span class="highlight-red-pinyin">líng</span> bā</span>
                     </div>
 
                     <!-- Row 3: 1000s Examples -->
                     <div class="grid-card center">
-                        <strong style="font-size:1.8rem;">1,<span class="underline-highlight">0</span>23</strong>
-                        <span class="kw-pinyin">yìqiān líng èrshísān</span>
+                        <strong style="font-size:1.8rem;">1<span class="underline-highlight">0</span>23</strong>
+                        <span class="kw-pinyin">yìqiān <span class="highlight-red-pinyin">líng</span> èrshísān</span>
                     </div>
                     <div class="grid-card center">
-                        <strong style="font-size:1.8rem;">4,5<span class="underline-highlight">0</span>6</strong>
-                        <span class="kw-pinyin">sìqiān wǔbǎi líng liù</span>
+                        <strong style="font-size:1.8rem;">45<span class="underline-highlight">0</span>6</strong>
+                        <span class="kw-pinyin">sìqiān wǔbǎi <span class="highlight-red-pinyin">líng</span> liù</span>
                     </div>
                     <div class="grid-card center">
-                        <strong style="font-size:1.8rem;">7,89<span class="underline-highlight">0</span></strong>
+                        <strong style="font-size:1.8rem;">7890</strong>
                         <span class="kw-pinyin">qīqiān bābǎi jiǔshí</span>
+                        <span style="font-size:0.95rem; color:#666;">(Trailing 0 is not in the middle; no "líng")</span>
                     </div>
                 </div>
 
@@ -867,48 +879,48 @@
             <div class="rule-card" style="border-top-color: #047857;">
                 <h3 style="color:var(--primary-dark);">Rule 2: The "yī" Rule (x1x)</h3>
                 <p style="font-size:1.35rem;">
-                    In hundreds where the tens digit is <strong>1</strong>, the word <span class="kw-pinyin">yī</span> (one) <strong style="color:#dc2626;">MUST be pronounced before "shí"</strong>!
+                    In hundreds where the tens digit is <strong>1</strong>, the word <span class="kw-pinyin"><span class="highlight-red-pinyin">yī</span></span> (one) <strong style="color:#dc2626;">MUST be pronounced before "shí"</strong>!
                 </p>
                 <div class="rule-grid" style="grid-template-columns: repeat(3, 1fr);">
                     <!-- Row 1: 111-119 Examples -->
                     <div class="grid-card center">
                         <strong style="font-size:1.8rem;">1<span class="underline-highlight">1</span>1</strong>
-                        <span class="kw-pinyin">yìbǎi yīshíyī</span>
+                        <span class="kw-pinyin">yìbǎi <span class="highlight-red-pinyin">yī</span>shíyī</span>
                     </div>
                     <div class="grid-card center">
                         <strong style="font-size:1.8rem;">1<span class="underline-highlight">1</span>2</strong>
-                        <span class="kw-pinyin">yìbǎi yīshí'èr</span>
+                        <span class="kw-pinyin">yìbǎi <span class="highlight-red-pinyin">yī</span>shí'èr</span>
                     </div>
                     <div class="grid-card center">
                         <strong style="font-size:1.8rem;">1<span class="underline-highlight">1</span>9</strong>
-                        <span class="kw-pinyin">yìbǎi yīshíjiǔ</span>
+                        <span class="kw-pinyin">yìbǎi <span class="highlight-red-pinyin">yī</span>shíjiǔ</span>
                     </div>
 
                     <!-- Row 2: Other 100s Examples -->
                     <div class="grid-card center">
                         <strong style="font-size:1.8rem;">3<span class="underline-highlight">1</span>4</strong>
-                        <span class="kw-pinyin">sānbǎi yīshísì</span>
+                        <span class="kw-pinyin">sānbǎi <span class="highlight-red-pinyin">yī</span>shísì</span>
                     </div>
                     <div class="grid-card center">
                         <strong style="font-size:1.8rem;">5<span class="underline-highlight">1</span>6</strong>
-                        <span class="kw-pinyin">wǔbǎi yīshíliù</span>
+                        <span class="kw-pinyin">wǔbǎi <span class="highlight-red-pinyin">yī</span>shíliù</span>
                     </div>
                     <div class="grid-card center">
                         <strong style="font-size:1.8rem;">7<span class="underline-highlight">1</span>8</strong>
-                        <span class="kw-pinyin">qībǎi yīshíbā</span>
+                        <span class="kw-pinyin">qībǎi <span class="highlight-red-pinyin">yī</span>shíbā</span>
                     </div>
 
                     <!-- Row 3: 1000s Examples -->
                     <div class="grid-card center">
-                        <strong style="font-size:1.8rem;">1,<span class="underline-highlight">1</span>23</strong>
+                        <strong style="font-size:1.8rem;">1123</strong>
                         <span class="kw-pinyin">yìqiān yìbǎi èrshísān</span>
                     </div>
                     <div class="grid-card center">
-                        <strong style="font-size:1.8rem;">4,5<span class="underline-highlight">1</span>6</strong>
-                        <span class="kw-pinyin">sìqiān wǔbǎi yīshíliù</span>
+                        <strong style="font-size:1.8rem;">45<span class="underline-highlight">1</span>6</strong>
+                        <span class="kw-pinyin">sìqiān wǔbǎi <span class="highlight-red-pinyin">yī</span>shíliù</span>
                     </div>
                     <div class="grid-card center">
-                        <strong style="font-size:1.8rem;">7,8<span class="underline-highlight">9</span>1</strong>
+                        <strong style="font-size:1.8rem;">7891</strong>
                         <span class="kw-pinyin">qīqiān bābǎi jiǔshíyī</span>
                     </div>
                 </div>
@@ -1216,7 +1228,7 @@
                 </div>
                 <div class="stacked-card">
                     <div class="stacked-val">7:<span class="underline-highlight">0</span>5</div>
-                    <div class="stacked-pinyin">qī diǎn líng wǔ fēn</div>
+                    <div class="stacked-pinyin">qī diǎn <span class="highlight-red-pinyin">líng</span> wǔ fēn</div>
                     <div class="stacked-rule-note" style="color:#dc2626;">"líng" rule for minutes &lt; 10</div>
                 </div>
                 <div class="stacked-card">
@@ -1225,21 +1237,21 @@
                     <div class="stacked-rule-note">Half past / 30 minutes</div>
                 </div>
 
-                <!-- Row 3: 24-Hour Digital Format -->
+                <!-- Row 3: 24-Hour Digital Format Convert to 12-Hour -->
                 <div class="stacked-card">
                     <div class="stacked-val">14:<span class="underline-highlight">0</span>8</div>
-                    <div class="stacked-pinyin">shísì diǎn líng bā fēn</div>
-                    <div class="stacked-rule-note">24-hour format (2:08 PM)</div>
+                    <div class="stacked-pinyin"><span class="strike-pinyin">shísì diǎn líng bā fēn</span> liǎng diǎn <span class="highlight-red-pinyin">líng</span> bā fēn</div>
+                    <div class="stacked-rule-note">Spoken Chinese converts 14:00 to 2:00 PM</div>
                 </div>
                 <div class="stacked-card">
                     <div class="stacked-val">19:00</div>
-                    <div class="stacked-pinyin">shíjiǔ diǎn</div>
-                    <div class="stacked-rule-note">24-hour format (7:00 PM)</div>
+                    <div class="stacked-pinyin"><span class="strike-pinyin">shíjiǔ diǎn</span> qī diǎn</div>
+                    <div class="stacked-rule-note">Spoken Chinese converts 19:00 to 7:00 PM</div>
                 </div>
                 <div class="stacked-card">
                     <div class="stacked-val">23:23</div>
-                    <div class="stacked-pinyin">èrshísān diǎn èrshísān fēn</div>
-                    <div class="stacked-rule-note">24-hour format (11:23 PM)</div>
+                    <div class="stacked-pinyin"><span class="strike-pinyin">èrshísān diǎn èrshísān fēn</span> shíyī diǎn èrshísān fēn</div>
+                    <div class="stacked-rule-note">Spoken Chinese converts 23:00 to 11:00 PM</div>
                 </div>
             </div>
         </div>
