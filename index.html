@@ -368,6 +368,11 @@
             font-weight: bold;
         }
 
+        .highlight-green-pinyin {
+            color: #059669;
+            font-weight: bold;
+        }
+
         /* Price Formatting */
         .template-slot-box {
             background: #ffffff;
@@ -925,10 +930,25 @@
                     </div>
                 </div>
 
-                <div class="info-box" style="margin-top:20px;">
-                    <strong style="color:#b45309;"> Important Exception Note:</strong><br>
-                    When numbers <strong>11-19 stand alone</strong> (without hundreds in front), do <strong>NOT</strong> say "yīshíyī", "yīshí'èr"... Just say <strong>shíyī, shí'èr</strong>! <br>
-                    <em>Reason:</em> Without a preceding hundreds digit, there is no ambiguity about which position "shí" belongs to.
+                <!-- 强化后的 Important Exception Note 模块 -->
+                <div class="info-box" style="margin-top: 25px; border-left: 8px solid #dc2626; background-color: #fef2f2; border-radius: 12px; padding: 25px 30px; box-shadow: 0 4px 12px rgba(220, 38, 38, 0.06);">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                        <span style="font-size: 1.6rem;">⚠️</span>
+                        <strong style="color: #991b1b; font-size: 1.45rem; letter-spacing: 0.5px;">Important Exception Note:</strong>
+                    </div>
+                    
+                    <p style="margin: 0 0 12px 0; font-size: 1.35rem; color: #1c1917; line-height: 1.7;">
+                        When numbers <strong style="color: #991b1b; background-color: #fee2e2; padding: 2px 8px; border-radius: 6px;">11–19 stand alone</strong> (without hundreds in front):
+                    </p>
+
+                    <div style="font-size: 1.45rem; margin: 12px 0; padding: 14px 22px; background: #ffffff; border-radius: 10px; border: 2px solid #fecaca; display: inline-flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+                        <span style="color: #dc2626; font-weight: bold;"><span style="text-decoration: line-through; opacity: 0.85;">❌ do NOT say "yīshíyī", "yīshí'èr"...</span></span>
+                        <span style="color: #059669; font-weight: bold; background: #ecfdf5; padding: 4px 12px; border-radius: 6px; border: 1px solid #a7f3d0;">✅ Just say shíyī, shí'èr!</span>
+                    </div>
+
+                    <p style="margin: 10px 0 0 0; font-size: 1.25rem; color: #78350f; line-height: 1.6; border-top: 1px stroke #fca5a5; padding-top: 8px;">
+                        <strong style="color: #b45309;">💡 Reason:</strong> Without a preceding hundreds digit, there is no ambiguity about which position <strong>"shí"</strong> belongs to!
+                    </p>
                 </div>
             </div>
 
@@ -988,6 +1008,58 @@
 
         <!-- Section 6: Days -->
         <div id="days" class="section">
+            <!-- Warm-up Golden Formula Card for Post-Break Section -->
+            <div class="rule-card" style="border-top-color: #047857; background: #ecfdf5; margin-bottom: 35px;">
+                <h3 style="color: var(--primary-dark); margin-top: 0; display: flex; align-items: center; gap: 10px;">
+                    <span style="font-size: 1.6rem;">💡</span>
+                    <span>Post-Break Core Concept: The Chinese Universal Number Formula</span>
+                </h3>
+                
+                <p style="font-size: 1.35rem; color: #064e3b; margin-top: 10px;">
+                    Before diving into Days, Currency, and Time, remember this <strong>Golden Rule</strong>: In Chinese, whenever numbers appear, they almost ALWAYS follow the structure:
+                </p>
+
+                <div class="template-slot-box" style="background: #ffffff; border-color: #047857; color: #064e3b; font-size: 1.8rem; margin: 20px 0;">
+                    <span style="color: #059669;">Number (Nu)</span> + <span style="color: #d97706;">Measure Word / Unit (M)</span> <span style="color: #64748b; font-size: 1.4rem;">(+ Noun)</span>
+                </div>
+
+                <div class="rule-grid" style="grid-template-columns: repeat(3, 1fr); margin-top: 20px;">
+                    <div class="grid-card" style="background: #ffffff; border-color: #a7f3d0;">
+                        <strong style="color: var(--primary-dark);">💰 Currency (Nu + Unit)</strong>
+                        <div style="font-size: 1.15rem; color: #1c1917;">
+                            • <span class="kw-pinyin">sān kuài</span> (RM 3)<br>
+                            • <span class="kw-pinyin">wǔ máo</span> (50 cents)<br>
+                            • <span class="kw-pinyin">liù fēn</span> (6 cents)
+                        </div>
+                    </div>
+
+                    <div class="grid-card" style="background: #ffffff; border-color: #a7f3d0;">
+                        <strong style="color: var(--primary-dark);">⏰ Time (Nu + Unit)</strong>
+                        <div style="font-size: 1.15rem; color: #1c1917;">
+                            • <span class="kw-pinyin">bā diǎn shíyī fēn</span><br>
+                            &nbsp;&nbsp;(8:11 / 8 o'clock 11 minutes)
+                        </div>
+                    </div>
+
+                    <div class="grid-card" style="background: #ffffff; border-color: #a7f3d0;">
+                        <strong style="color: var(--primary-dark);">📅 Date & Calendar (Nu + Unit)</strong>
+                        <div style="font-size: 1.15rem; color: #1c1917;">
+                            • <span class="kw-pinyin">yī jiǔ jiǔ jiǔ nián</span> (1999)<br>
+                            • <span class="kw-pinyin">sì yuè</span> (April / Month 4)<br>
+                            • <span class="kw-pinyin">èrshí'èr hào</span> (22nd)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-box" style="margin: 20px 0 0 0; background: #fff5f5; border-left-color: #dc2626; border-radius: 10px;">
+                    <strong style="color: #991b1b; font-size: 1.3rem;">🚨 The ONLY Major Exception: Days of the Week!</strong>
+                    <p style="margin: 6px 0 0 0; font-size: 1.2rem; color: #7f1d1d;">
+                        Why do we say <span class="kw-pinyin">xīngqīyī</span>, <span class="kw-pinyin">xīngqī'èr</span> (Unit + Nu) instead? <br>
+                        <em>Reason:</em> In Days of the Week, <span class="kw-pinyin">xīngqī</span> (week) serves as a fixed sequence anchor. The numbers 1–6 function as <strong>ordinal tags (Day 1, Day 2...)</strong> rather than quantity!
+                    </p>
+                </div>
+            </div>
+
             <h1>
                 <span>5. Days of the Week</span>
                 <span class="page-badge">KLXHY pg 15</span>
@@ -1117,12 +1189,12 @@
                 </div>
                 <div class="stacked-card">
                     <div class="stacked-val">RM 2.22</div>
-                    <div class="stacked-pinyin"><span class="price-num">liǎng</span> kuài <span class="price-num">liǎng</span> máo <span class="price-num">liǎng</span> fēn</div>
+                    <div class="stacked-pinyin"><span class="highlight-green-pinyin">liǎng</span> kuài <span class="highlight-green-pinyin">liǎng</span> máo <span class="highlight-green-pinyin">liǎng</span> fēn</div>
                     <div class="stacked-rule-note">Use "liǎng" for all 2s in currency units</div>
                 </div>
                 <div class="stacked-card">
                     <div class="stacked-val">RM 12.47</div>
-                    <div class="stacked-pinyin"><span class="price-num">shí'èr</span> kuài <span class="price-num">sì</span> máo <span class="price-num">qī</span> fēn</div>
+                    <div class="stacked-pinyin">shí'<span class="highlight-red-pinyin">èr</span> kuài <span class="price-num">sì</span> máo <span class="price-num">qī</span> fēn</div>
                     <div class="stacked-rule-note">Standard price with 2-digit ringgit</div>
                 </div>
 
@@ -1139,7 +1211,7 @@
                 </div>
                 <div class="stacked-card">
                     <div class="stacked-val">RM 12.60</div>
-                    <div class="stacked-pinyin"><span class="price-num">shí'èr</span> kuài <span class="price-num">liù</span> máo</div>
+                    <div class="stacked-pinyin">shí'<span class="highlight-red-pinyin">èr</span> kuài <span class="price-num">liù</span> máo</div>
                     <div class="stacked-rule-note">No cents (stop at máo)</div>
                 </div>
 
@@ -1211,12 +1283,12 @@
                 </div>
                 <div class="stacked-card">
                     <div class="stacked-val"><span class="underline-highlight">2</span>:22</div>
-                    <div class="stacked-pinyin">liǎng diǎn èrshí'èr fēn</div>
+                    <div class="stacked-pinyin"><span class="highlight-green-pinyin">liǎng</span> diǎn <span class="highlight-red-pinyin">èr</span>shí'<span class="highlight-red-pinyin">èr</span> fēn</div>
                     <div class="stacked-rule-note">Use "liǎng" for 2 o'clock hour</div>
                 </div>
                 <div class="stacked-card">
                     <div class="stacked-val">12:47</div>
-                    <div class="stacked-pinyin">shí'èr diǎn sìshíqī fēn</div>
+                    <div class="stacked-pinyin">shí'<span class="highlight-red-pinyin">èr</span> diǎn sìshíqī fēn</div>
                     <div class="stacked-rule-note">Standard 12-hour format</div>
                 </div>
 
@@ -1233,14 +1305,14 @@
                 </div>
                 <div class="stacked-card">
                     <div class="stacked-val">12:30</div>
-                    <div class="stacked-pinyin">shí'èr diǎn sānshí fēn</div>
+                    <div class="stacked-pinyin">shí'<span class="highlight-red-pinyin">èr</span> diǎn sānshí fēn</div>
                     <div class="stacked-rule-note">Half past / 30 minutes</div>
                 </div>
 
                 <!-- Row 3: 24-Hour Digital Format Convert to 12-Hour -->
                 <div class="stacked-card">
                     <div class="stacked-val">14:<span class="underline-highlight">0</span>8</div>
-                    <div class="stacked-pinyin"><span class="strike-pinyin">shísì diǎn líng bā fēn</span> liǎng diǎn <span class="highlight-red-pinyin">líng</span> bā fēn</div>
+                    <div class="stacked-pinyin"><span class="strike-pinyin">shísì diǎn líng bā fēn</span> <span class="highlight-green-pinyin">liǎng</span> diǎn <span class="highlight-red-pinyin">líng</span> bā fēn</div>
                     <div class="stacked-rule-note">Spoken Chinese converts 14:00 to 2:00 PM</div>
                 </div>
                 <div class="stacked-card">
@@ -1253,6 +1325,89 @@
                     <div class="stacked-pinyin"><span class="strike-pinyin">èrshísān diǎn èrshísān fēn</span> shíyī diǎn èrshísān fēn</div>
                     <div class="stacked-rule-note">Spoken Chinese converts 23:00 to 11:00 PM</div>
                 </div>
+            </div>
+
+            <!-- Special Comparison: "2" in Currency vs Time -->
+            <div class="rule-card" style="border-top-color: #d97706; margin-top: 35px;">
+                <h3 style="color: #b45309; display: flex; align-items: center; gap: 10px; margin-top: 0;">
+                    <span style="font-size: 1.6rem;">⚠️</span>
+                    <span>Special Caution: "èr" vs. "liǎng" for Number "2" in Currency & Time</span>
+                </h3>
+
+                <div class="concept-box" style="border-left-color: #d97706; background-color: #fffbeb; border-color: #fde047; margin-bottom: 25px;">
+                    <strong style="color: #b45309; font-size: 1.35rem;">💡 Rules to Highlight for Students:</strong>
+                    <ul style="margin: 10px 0 0 0; padding-left: 25px; line-height: 1.8; color: #78350f; font-size: 1.25rem;">
+                        <li><strong>Currency (kuài, máo, fēn):</strong> Single 2s in currency units use <strong style="color: #059669; background: #ecfdf5; padding: 2px 6px; border-radius: 4px;">liǎng</strong> (<em>liǎng kuài, liǎng máo, liǎng fēn</em>). Tens position uses <strong style="color: #dc2626; background: #fee2e2; padding: 2px 6px; border-radius: 4px;">èr</strong> (<em>shí'èr kuài</em>).</li>
+                        <li><strong>Time (diǎn, fēn):</strong> Hour "2 o'clock" uses <strong style="color: #059669; background: #ecfdf5; padding: 2px 6px; border-radius: 4px;">liǎng diǎn</strong>. Minutes position uses <strong style="color: #dc2626; background: #fee2e2; padding: 2px 6px; border-radius: 4px;">èr</strong> (<em>èr fēn / èrshí fēn / èrshí'èr fēn</em>).</li>
+                    </ul>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 22%;">Scenario</th>
+                            <th style="width: 39%;">💰 Currency (RM)</th>
+                            <th style="width: 39%;">⏰ Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>2.00 / 2:00</strong></td>
+                            <td>
+                                <strong style="font-size: 1.5rem; color: var(--primary-dark);">RM 2.00</strong><br>
+                                <span class="kw-pinyin" style="color: #d97706; font-size: 1.3rem;"><span class="highlight-green-pinyin">liǎng</span> kuài</span>
+                            </td>
+                            <td>
+                                <strong style="font-size: 1.5rem; color: var(--primary-dark);">2:00</strong><br>
+                                <span class="kw-pinyin" style="color: #047857; font-size: 1.3rem;"><span class="highlight-green-pinyin">liǎng</span> diǎn</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>12.00 / 12:00</strong></td>
+                            <td>
+                                <strong style="font-size: 1.5rem; color: var(--primary-dark);">RM 12.00</strong><br>
+                                <span class="kw-pinyin" style="color: #d97706; font-size: 1.3rem;">shí'<span class="highlight-red-pinyin">èr</span> kuài</span>
+                            </td>
+                            <td>
+                                <strong style="font-size: 1.5rem; color: var(--primary-dark);">12:00</strong><br>
+                                <span class="kw-pinyin" style="color: #047857; font-size: 1.3rem;">shí'<span class="highlight-red-pinyin">èr</span> diǎn</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>2.22 / 2:22</strong></td>
+                            <td>
+                                <strong style="font-size: 1.5rem; color: var(--primary-dark);">RM 2.22</strong><br>
+                                <span class="kw-pinyin" style="color: #d97706; font-size: 1.3rem;"><span class="highlight-green-pinyin">liǎng</span> kuài <span class="highlight-green-pinyin">liǎng</span> máo <span class="highlight-green-pinyin">liǎng</span> fēn</span>
+                            </td>
+                            <td>
+                                <strong style="font-size: 1.5rem; color: var(--primary-dark);">2:22</strong><br>
+                                <span class="kw-pinyin" style="color: #047857; font-size: 1.3rem;"><span class="highlight-green-pinyin">liǎng</span> diǎn <span class="highlight-red-pinyin">èr</span>shí'<span class="highlight-red-pinyin">èr</span> fēn</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>12.02 / 12:02</strong></td>
+                            <td>
+                                <strong style="font-size: 1.5rem; color: var(--primary-dark);">RM 12.02</strong><br>
+                                <span class="kw-pinyin" style="color: #d97706; font-size: 1.3rem;">shí'<span class="highlight-red-pinyin">èr</span> kuài <span class="highlight-green-pinyin">liǎng</span> fēn</span>
+                            </td>
+                            <td>
+                                <strong style="font-size: 1.5rem; color: var(--primary-dark);">12:02</strong><br>
+                                <span class="kw-pinyin" style="color: #047857; font-size: 1.3rem;">shí'<span class="highlight-red-pinyin">èr</span> diǎn <span class="highlight-red-pinyin">líng</span> <span class="highlight-red-pinyin">èr</span> fēn</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>12.20 / 12:20</strong></td>
+                            <td>
+                                <strong style="font-size: 1.5rem; color: var(--primary-dark);">RM 12.20</strong><br>
+                                <span class="kw-pinyin" style="color: #d97706; font-size: 1.3rem;">shí'<span class="highlight-red-pinyin">èr</span> kuài <span class="highlight-green-pinyin">liǎng</span> máo</span>
+                            </td>
+                            <td>
+                                <strong style="font-size: 1.5rem; color: var(--primary-dark);">12:20</strong><br>
+                                <span class="kw-pinyin" style="color: #047857; font-size: 1.3rem;">shí'<span class="highlight-red-pinyin">èr</span> diǎn <span class="highlight-red-pinyin">èr</span>shí fēn</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
 
